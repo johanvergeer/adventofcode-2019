@@ -109,7 +109,7 @@ component_masses = [
 
 
 @pytest.mark.parametrize(
-    "masses,expected_fuel", [([12], 2), ([14], 2), ([1969], 654), ([100756], 33583), (component_masses, 3412207)]
+    "masses,expected_fuel", [([12], 2), ([14], 2), ([1969], 966), ([100756], 50346), (component_masses, 5115436)]
 )
 def test_fuel_requirements(masses: List[int], expected_fuel: int) -> None:
     components = [SpacecraftComponent(mass) for mass in masses]
